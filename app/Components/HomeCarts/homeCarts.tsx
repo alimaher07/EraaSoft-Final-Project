@@ -25,7 +25,7 @@ export default function homeCarts() {
                 <Image src={worldLogo} alt="" className="w-16 h-16" />
             </div>
             <div className="cart-title">
-                <h3 className="font-semibold text-[#181d38]">Skilled Instructors</h3>
+                <h3 className="font-semibold text-[#181d38]">Online Classes</h3>
             </div>
             <div className="cart-description">
                 <p className="text-[#52565b]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, cupiditate.</p>
@@ -36,7 +36,7 @@ export default function homeCarts() {
                 <Image src={homeLogo} alt="" className="w-16 h-16" />
             </div>
             <div className="cart-title">
-                <h3 className="font-semibold text-[#181d38]">Skilled Instructors</h3>
+                <h3 className="font-semibold text-[#181d38]">Home Projects</h3>
             </div>
             <div className="cart-description">
                 <p className="text-[#52565b]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatum!</p>
@@ -47,7 +47,7 @@ export default function homeCarts() {
                 <Image src={bookLogo} alt="" className="w-16 h-16" />
             </div>
             <div className="cart-title">
-                <h3 className="font-semibold text-[#181d38]">Skilled Instructors</h3>
+                <h3 className="font-semibold text-[#181d38]">Book Library</h3>
             </div>
             <div className="cart-description">
                 <p className="text-[#52565b]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, perferendis?</p>
