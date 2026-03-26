@@ -64,7 +64,7 @@ export default function contact() {
             <input type="email" placeholder="Your Email" className="p-2 border border-[#52565b3d] outline-0" />
           </div>
           <input type="text" placeholder="Subject" className="p-2 border border-[#52565b3d] outline-0" />
-          <textarea name="" id="" cols="30" rows="7" placeholder="Message" className="p-2 border border-[#52565b3d] outline-0"></textarea>
+          <textarea name="" id="" cols={30} rows={7} placeholder="Message" className="p-2 border border-[#52565b3d] outline-0"></textarea>
           <button className="bg-[#06BBCC] p-4 text-white">Send Messages</button>
         </div>
       </div>
