@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Heebo;
+    src: url("../../../../public/Fonts/Heebo-Regular.ttf");
+  }
+
+@theme {
+    --font-heebo : Heebo, "sans-serif"
+}
+
+.btns{
+  transition: ease-in-out 0.3s;
+}
+
+.btns:hover{
+  background-color: #06cadb;
+}
+
+@media screen and (max-width: 991px) {
+  .courses-container{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .courses-container{
+    padding-top: 18px;
+    padding-inline: 40px;
+  }
+  .courses-cart{
+    width: 55svw;
+  }
+  .course-image{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .btns{
+    margin-bottom: 5svh;
+  }
+  .cart-button{
+    width: 17svw;
+    height: 7svh;
+    a{
+      font-size: 18px;
+    }
+  }
+  .course-price{
+    font-size: 35px;
+  }
+  .course-rating img{
+    width: 20px;
+  }
+  .course-rating small{
+    font-size: 17px;
+  }
+  .course-description p{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .courses-container{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .courses-cart{
+    margin-inline: auto;
+    width: 85svw;
+    .btns{
+      margin-bottom: -10svh !important;
+    }
+  }
+  .course-details img{
+    width: 20px;
+  }
+  .course-details small{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .courses-cart{
+    width: 200svw;
+    .btns{
+      width: 93svw;
+      margin-bottom: -9svh !important;
+    }
+    .cart-button{
+      width: 37svw;
+      height: 12svh;
+      a{
+        width: 100%;
+        font-size: 25px !important;
+      }
+    }
+    .course-price{
+      font-size: 55px;
+    }
+    .course-rating{
+      img{
+        width: 7svw;
+      }
+      small{
+        font-size: 25px;
+      }
+    }
+    .course-description p{
+      font-size: 45px;
+    }
+    .course-details {
+      small{
+        font-size: 33px;
+      }
+      img{
+        width: 8svw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btns{
+    width: 113svw !important;
+  }
+  .cart-button{
+    width: 50svw !important;
+  }
+}

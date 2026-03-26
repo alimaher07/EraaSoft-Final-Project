@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Heebo;
+    src: url("../../../public/Fonts/Heebo-Regular.ttf");
+  }
+
+@theme {
+    --font-heebo : Heebo, "sans-serif"
+}
+
+a{
+    margin-left: 15px;
+}
+
+@keyframes rotation {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+.icon:hover{
+    animation-name: rotation;
+    animation-duration: 0.9s;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-grid{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .footer-grid{
+        padding-inline: 40px;
+        gap: 45px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    a{
+        font-size: 22px;
+    }
+    .nav-contact p{
+        font-size: 22px;
+    }
+    .nav-contact img{
+        width: 3svw;
+    }
+    .social-links img{
+        width: 5svw;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .footer-grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        margin-inline: 15svw;
+    }
+    .nav-contact p{
+        font-size: 25px;
+    }
+    .web-links a{
+        font-size: 25px;
+    }
+    .gallery-imgs{
+        width: 110svw;
+    }
+    .newletter p{
+        font-size: 25px;
+    }
+    .newsletter-input{
+        margin-inline: auto;
+        margin-top: 20px;
+        width: 55%;
+        font-size: 25px;
+    }
+    .copyright{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .web-links{
+        h2{
+            font-size: 55px;
+        }
+        a{
+            font-size: 35px;
+        }
+    }
+    .nav-contact{
+        h2{
+            font-size: 55px;
+        }
+        p{
+            font-size: 35px;
+        }
+        img{
+            width: 8svw;
+        }
+        .social-links{
+            img{
+                width: 15svw;
+            }
+        }
+    }
+    .gallery{
+        h2{
+            font-size: 55px;
+        }
+        .gallery-imgs{
+            width: 190svw;
+        }
+    }
+    .newletter{
+        h2{
+            font-size: 55px;
+        }
+        p{
+            font-size: 35px;
+        }
+        .newsletter-input{
+            padding: 20px;
+            width: 100%;
+            font-size: 45px; 
+        }
+    }
+    .footer-bottom-links a{
+        font-size: 35px;
+    }
+    .distributed{
+        font-size: 30px;
+    }
+}

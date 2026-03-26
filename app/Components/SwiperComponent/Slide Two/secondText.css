@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Heebo;
+    src: url("../../../../public/Fonts/Heebo-Regular.ttf");
+  }
+
+@theme {
+    --font-heebo : Heebo, "sans-serif"
+}
+
+.second-slider{
+    background-image: url("../../../../public/CarouselOne.jpg");
+    box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
+    -webkit-box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
+    -moz-box-shadow: -2px -1px 400px 200px rgba(24,29,56,0.75) inset;
+    width: 98.9svw;
+    height: 100svh;
+    padding-inline: 10svw;
+}
+
+@keyframes move {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.right-move-btn{
+    animation: move linear;
+    animation-range: entry 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .second-slider{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .main-text{
+        width: 90svw;
+    }
+    .first-slider{
+        width: 100%;
+        gap: 18px;
+    }
+    .slide-title{
+        font-size: 30px;
+    }
+    .big-text{
+        font-size: 60px;
+    }
+    .slide-description{
+        font-size: 20px;
+    }
+    .right-move-btn, .left-move-btn{
+        width: 21svw;
+        height: 14svh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .second-slider{
+        height: 137svh;
+    }
+    .main-text{
+        width: 100% !important;
+    }
+    .slide-title{
+        font-size: 50px !important;
+    }
+    .big-text{
+        font-size: 85px !important;
+    }
+    .slide-description{
+        font-size: 37px !important;
+        line-height: 8svh;
+    }
+    .main-btns button{
+        font-size: 30px;
+        width: 50svw !important;
+        height: 20svh !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-btns button{
+        font-size: 30px;
+        width: 70svw !important;
+        height: 20svh !important;
+    }
+}

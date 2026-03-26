@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Heebo;
+  src: url("../public/Fonts/Heebo-Regular.ttf");
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../public/Fonts/Nunito-Bold.ttf");
+}
+
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heebo: Heebo, "sans-serif"
+  --font-nunito: Nunito, "sans-serif"
+}
+
+@media screen and (max-width: 991px) {
+  body{
+    width: 101svw;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  body{
+    width: 101.5svw;
+  }
+}
+@media screen and (max-width: 926px) {
+  body{
+    width: 101.5svw;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  body{
+    width: 130svw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    width: 132svw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body{
+    width: 235svw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body{
+    width: 267svw !important;
+  }
+}

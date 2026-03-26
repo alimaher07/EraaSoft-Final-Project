@@ -1,0 +1,9 @@
+.main-image{
+    background-image: url("../../public/CarouselOne.jpg");
+    box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
+    -webkit-box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
+    -moz-box-shadow: -2px -1px 400px 200px rgba(24,29,56,0.75) inset;
+    width: 98.9svw;
+    height: 60svh;
+    padding-inline: 10svw;
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 778px) {
+    .client-img-container img{
+        width: 80px;
+    }
+    .client-name{
+        font-size: 25px;
+    }
+    .client-proffession{
+        font-size: 20px;
+    }
+    .client-comment{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .client-img-container img{
+        width: 160px !important;
+    }
+    .client-name{
+        font-size: 45px !important;
+    }
+    .client-proffession{
+        font-size: 35px !important;
+    }
+    .client-comment{
+        width: 170svw;
+        font-size: 30px !important;
+    }
+}

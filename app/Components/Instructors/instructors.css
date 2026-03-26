@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Heebo;
+    src: url("../../../public/Fonts/Heebo-Regular.ttf");
+  }
+
+@theme {
+    --font-heebo : Heebo, "sans-serif"
+}
+
+@keyframes appear {
+  from{
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.instructor-cart{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.instructors-title{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.expert-ins{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+@media screen and (max-width: 991px) {
+  .instructors-carts{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    .instructor-cart{
+      margin-inline: auto;
+    }
+  }
+  .instructor-image{
+    width: 23svw;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .instructors-carts{
+    margin-inline: 20px;
+  }
+  .instructor-cart{
+    width: 57svw;
+    height: 105svh;
+  }
+  .instructor-image{
+    width: 57svw;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .instructor-social img{
+    width: 40px;
+  }
+  .instructor-name{
+    font-size: 27px;
+  }
+  .instructor-designation{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instructors-container-title{
+    font-size: 25px;
+  }
+  .expert-ins{
+    font-size: 38px;
+  }
+  .instructors-carts{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .instructor-cart{
+    width: 80svw;
+    height: 100svh;
+  }
+  .instructor-image{
+    width: 79.5svw;
+    height: 75.5svh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .instructors-container-title{
+    font-size: 40px !important;
+  }
+  .expert-ins{
+    font-size: 65px !important;
+  }
+  .instructor-cart{
+    width: 200svw;
+    height: 190svh;
+  }
+  .instructor-image{
+    width: 200svw;
+    height: 150svh;
+  }
+  .instructor-social img{
+    width: 18svw;
+  }
+  .instructor-details{
+    .instructor-name{
+      font-size: 45px;
+    }
+    .instructor-designation{
+      font-size: 30px;
+    }
+  }
+}

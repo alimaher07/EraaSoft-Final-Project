@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Heebo;
+    src: url("../public/Fonts/Heebo-Regular.ttf");
+  }
+
+@theme {
+    --font-heebo : Heebo, "sans-serif"
+}
