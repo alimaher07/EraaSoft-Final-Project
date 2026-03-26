@@ -15,8 +15,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heebo: Heebo, "sans-serif"
-  --font-nunito: Nunito, "sans-serif"
+  --font-heebo: Heebo, "sans-serif";
+  --font-nunito: Nunito, "sans-serif";
 }
 
 @media screen and (max-width: 991px) {
