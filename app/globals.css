@@ -48,6 +48,12 @@
   }
 }
 
+@media screen and (max-width: 515px) {
+  body{
+    width: 134svw;
+  }
+}
+
 @media screen and (max-width: 425px) {
   body{
     width: 235svw;

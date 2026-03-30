@@ -59,7 +59,7 @@ a{
     .footer-grid{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
-        margin-inline: 15svw;
+        margin-inline: 8svw;
     }
     .nav-contact p{
         font-size: 25px;

@@ -15,42 +15,53 @@
   background-color: #06cadb;
 }
 
+@media screen and (max-width: 1024px) {
+  .btns{
+    left: 22%;
+    bottom: 9%;
+  }
+  .teacher-name, .time, .students-number{
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 991px) {
-  .courses-container{
+  .courses-carts{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    margin-inline: auto;
+
+  }
+  .courses-cart{
+    width: fit-content;
+    margin-inline: auto;
+  }
+  .teacher-name, .time, .students-number{
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 778px) {
-  .courses-container{
-    padding-top: 18px;
-    padding-inline: 40px;
+  .courses-carts{
+    margin-inline: 20px;
+    width: fit-content;
   }
   .courses-cart{
-    width: 55svw;
-  }
-  .course-image{
-    width: 100%;
-    img{
+    width: 60svw;
+    .image-and-btn-course{
       width: 100%;
-    }
-  }
-  .btns{
-    margin-bottom: 5svh;
-  }
-  .cart-button{
-    width: 17svw;
-    height: 7svh;
-    a{
-      font-size: 18px;
+      .course-image{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
     }
   }
   .course-price{
     font-size: 35px;
-  }
-  .course-rating img{
-    width: 20px;
   }
   .course-rating small{
     font-size: 17px;
@@ -61,70 +72,104 @@
 }
 
 @media screen and (max-width: 767px) {
-  .courses-container{
+  .courses-carts{
+    margin-inline: auto;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
   }
   .courses-cart{
-    margin-inline: auto;
-    width: 85svw;
+    width: 93svw;
+  }
+  .image-and-btn-course{
+    width: 100%;
+    .course-image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
     .btns{
-      margin-bottom: -10svh !important;
+      left: 30%;
+      font-size: 20px;
     }
   }
-  .course-details img{
-    width: 20px;
+  .course-rating{
+    img{
+      width: 25px;
+    }
   }
-  .course-details small{
-    font-size: 18px;
+  .teacher-name, .time, .students-number{
+    font-size: 20px;
+    img{
+      width: 20px;
+    }
+  }
+  .students-number{
+    img{
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .btns{
+    left: 22% !important;
   }
 }
 
 @media screen and (max-width: 425px) {
   .courses-cart{
-    width: 200svw;
+    width: 209svw;
     .btns{
-      width: 93svw;
-      margin-bottom: -9svh !important;
-    }
-    .cart-button{
-      width: 37svw;
-      height: 12svh;
+      left: 25% !important;
+      padding-block: 8px;
+      width: 45%;
       a{
-        width: 100%;
-        font-size: 25px !important;
+        font-size: 30px !important;
       }
     }
     .course-price{
-      font-size: 55px;
+      font-size: 60px;
     }
     .course-rating{
       img{
-        width: 7svw;
+        width: 35px;
       }
       small{
-        font-size: 25px;
+        font-size: 30px;
       }
     }
     .course-description p{
-      font-size: 45px;
+      font-size: 50px;
     }
-    .course-details {
-      small{
-        font-size: 33px;
-      }
+    .teacher-name, .time, .students-number {
+      font-size: 40px;
       img{
-        width: 8svw;
+        width: 40px;
+      }
+    }
+    .students-number{
+      img{
+        width: 50px;
       }
     }
   }
 }
 
 @media screen and (max-width: 375px) {
-  .btns{
-    width: 113svw !important;
+  .courses-carts{
+    margin-inline: 0;
+    width: 100%;
   }
-  .cart-button{
-    width: 50svw !important;
+  .courses-cart{
+    width: 240svw;
+  }
+  .btns{
+    width: 50% !important;
+    left: 24% !important;
+    font-size: 38px !important;
+  }
+  .teacher-name, .time, .students-number{
+    font-size: 30px !important;
   }
 }

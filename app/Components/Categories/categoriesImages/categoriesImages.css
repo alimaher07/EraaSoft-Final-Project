@@ -14,6 +14,12 @@
   animation-range: entry 0% cover 20%;
 }
 
+@media screen and (max-width: 1024px) {
+  .flex-long-image{
+    height: 78svh;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .flex-container{
     gap: 13px;
@@ -26,13 +32,12 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
   }
-  .long-image{
-    height: 93.5svh;
-    width: 38svw;
-  }
   .group-image{
     height: 23svh;
     width: 33svw;
+  }
+  .flex-long-image{
+    height: 94svh;
   }
 }
 
@@ -50,6 +55,9 @@
   }
   .group-image{
     height: 28svh;
+  }
+  .flex-long-image{
+    height: 130svh;
   }
 }
 
@@ -79,7 +87,7 @@
 
 @media screen and (max-width: 425px) {
   .flex-image{
-    width: 200svw;
+    width: 100%;
     .image{
       height: 60svh;
     }
@@ -97,20 +105,11 @@
     gap: 30px;
   }
   .flex-long-image{
-    width: 200svw;
+    width: 100%;
     height: 160svh;
     .long-image{
       width: 100%;
       height: 100%;
     }
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .flex-image{
-    width: 212svw;
-  }
-  .flex-long-image{
-    width: 212svw;
   }
 }

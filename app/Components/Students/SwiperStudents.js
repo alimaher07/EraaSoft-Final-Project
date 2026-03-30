@@ -20,7 +20,7 @@ export default function SwiperStudents() {
     navigation = {true}
     pagination = {{ clickable : true }}
     scrollbar = {{ draggable : true }}
-    className = 'w-250'
+    className = 'w-full'
     loop = {true}
     modules = {[ Pagination , Navigation ]}>
 

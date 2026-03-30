@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function categoriesImages() {
   return (
     <>
-      <div className="images-container flex flex-row gap-5 mx-auto items-center justify-center py-12 px-30 font-heebo">
+      <div className="images-container flex flex-row gap-5 mx-auto items-center justify-center font-heebo">
         <div className="flex-container flex flex-col gap-5">
           <div className="flex-image relative overflow-hidden">
             <Image src={ImageOne} alt="" height={250} width={600} className=" group-image image transition duration-600 hover:scale-110"></Image>
@@ -34,8 +34,8 @@ export default function categoriesImages() {
             </div>
           </div>
         </div>
-        <div className="flex-long-image w-[63svh] relative overflow-hidden">
-          <Image src={ImageFour} alt="" height={500} className="long-image h-[68svh] transition duration-600 hover:scale-110"></Image>
+        <div className="flex-long-image w-[30%] h-[69svh] relative overflow-hidden">
+          <Image src={ImageFour} alt="" height={500} className="long-image h-full transition duration-600 hover:scale-110"></Image>
           <div className="course-details absolute bottom-0 right-0 bg-[#FFFFFF] m-1 p-2 flex flex-col items-center text-center">
             <h3 className="font-semibold text-[20px]">Online Marketing</h3>
             <p className="text-[#06BBCC] text-[15px]">49 Courses</p>

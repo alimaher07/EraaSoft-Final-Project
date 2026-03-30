@@ -42,21 +42,23 @@ export default function coursescarts() {
 
   return (
     <>
-    <div className="courses-container py-12 px-30 grid grid-cols-3 gap-5 font-heebo">
+    <div className="courses-carts mx-auto w-fit grid grid-cols-3 gap-5 font-heebo">
     {courses.map(course => (
       <>
-      <div className="courses-cart flex flex-col text-center items-center justify-center bg-[#06bbcc15] w-fit gap-3 overflow-hidden">
+      <div className="courses-cart flex flex-col text-center my-auto w-fit items-center justify-center bg-[#06bbcc15] w-fit gap-3 overflow-hidden">
+        <div className="image-and-btn-course relative">
           <div className="course-image overflow-hidden">
             <Image src={course.image} alt="" width={350} height={300} className="  transition duration-600 hover:scale-110"></Image>
           </div>
-          <div className="btns absolute bg-[#06BBCC] mb-12 text-[#FFFFFF] rounded-full divide-x-1">
-            <button className="cart-button py-1 pl-2 pe-3 cursor-pointer"><a href="#">Read More</a></button>
-            <button className="cart-button py-1 pl-1 pe-5 cursor-pointer"><a href="#">Join Now</a></button>
+          <div className="btns left-[22%] bottom-[10%] absolute bg-[#06BBCC] text-[#FFFFFF] rounded-full divide-x-1">
+            <button className="cart-button py-1 pl-5 pe-[6px] cursor-pointer"><a href="#">Read More</a></button>
+            <button className="cart-button py-1 pl-[6px] pe-5 cursor-pointer"><a href="#">Join Now</a></button>
           </div>
+        </div>
           <div className="course-price">
             <p className="course-price text-3xl font-semibold">{course.price}</p>
           </div>
-          <div className="course-rating flex gap-1">
+          <div className="course-rating flex gap-1 items-center justify-center">
             <Image src={Star} alt="" width={15} height={15}></Image>
             <Image src={Star} alt="" width={15} height={15}></Image>
             <Image src={Star} alt="" width={15} height={15}></Image>

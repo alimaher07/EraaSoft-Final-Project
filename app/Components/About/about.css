@@ -31,12 +31,17 @@
     background-color: #06cadb;
   }
 
+  @media screen and (max-width: 1024px){
+    .about-container{
+      padding-inline: 2svw;
+    }
+  }
+
   @media screen and (max-width: 991px) {
     .about-container{
       display: block;
-      width: 101.5svw;
+      padding-inline: 16svw;
       .about-image{
-        width: 73svw;
         margin-inline: auto !important;
         margin-block: 20px;
       }
@@ -49,21 +54,16 @@
   @media screen and (max-width: 778px) {
     .about-container{
       width: 100%;
-      padding-inline: 12px;
+      padding-inline: 22px;
       .about-image{
-        width: 100%;
-        padding-inline: 15px;
-        margin-inline: auto !important;
+        height: 98svh;
         img{
           margin-inline: auto;
-          width: 115svw;
-          height: 105svh;
         }
       }
     }
     .about-description-title{
       margin: 0;
-      padding-inline: 43px;
       width: 100%;
     }
     .container-title{
@@ -82,39 +82,29 @@
       font-size: 21px;
     }
     .about-btn{
-      width: 27svw;
-      height: 13svh;
+      width: 28%;
       font-size: 23px;
     }
   }
 
-  @media screen and (max-width: 767px) {
-    .about-image{
-      width: 69% !important;
-      img{
-        height: 90svh !important;
-      }
-    }
-    .about-description-title{
-      width: 75% !important;
-      margin-inline: auto !important;
-    }
+  @media screen and (max-width: 506px) {
     .about-btn{
-      width: 30svw;  
+      width: 32%;
     }
   }
 
 @media screen and (max-width: 425px) {
+  .about-container{
+    padding-inline: 50px;
+  }
   .about-image{
-    width: 198svw !important;
+    height: 100% !important;
     img{
-      width: 190svw !important;
-      height: 180svh !important;
+      height: 100% !important;
     }
   }
   .about-description-title{
     margin-top: 50px;
-    width: 92% !important;
   }
   .container-title{
     font-size: 30px !important;
@@ -142,7 +132,7 @@
   }
   .about-btn{
     font-size: 40px;
-    width: 95svw;
+    width: 50%;
     height: 33svw;
   }
 }

@@ -4,7 +4,7 @@ import CoursesCarts from "./CoursesCarts/coursescarts"
 export default function course() {
   return (
     <>
-      <div className="courses-container font-heebo">
+      <div className="courses-container font-heebo mt-10">
         <div className="courses-title flex justify-center text-[#06BBCC]">
           <div className="design-line flex flex-col -my-2">
             <span className="h-2 mx-6.5">_____</span>
@@ -18,9 +18,9 @@ export default function course() {
             <span className="h-2">_________</span>
           </div>
         </div>
-        <p className="popular-courses flex item-center justify-center text-[40px] font-semibold my-3">Popular Courses</p>
-      </div>
+        <p className="popular-courses flex item-center justify-center text-[40px] font-semibold mt-1">Popular Courses</p>
       <CoursesCarts />
+      </div>
     </>
   );
 }

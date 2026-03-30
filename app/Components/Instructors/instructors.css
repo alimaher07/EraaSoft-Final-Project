@@ -34,34 +34,27 @@
   animation-range: entry 0% cover 20%;
 }
 
+@media screen and (max-width: 1024px) {
+  .instructors-carts{
+    margin-inline: 20px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .instructors-carts{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 30px;
+    margin-inline: 14.5svw;
     .instructor-cart{
       margin-inline: auto;
     }
-  }
-  .instructor-image{
-    width: 23svw;
   }
 }
 
 @media screen and (max-width: 778px) {
   .instructors-carts{
-    margin-inline: 20px;
-  }
-  .instructor-cart{
-    width: 57svw;
-    height: 105svh;
-  }
-  .instructor-image{
-    width: 57svw;
-    img{
-      width: 100%;
-      height: 100%;
-    }
+    margin-inline: 30px;
   }
   .instructor-social img{
     width: 40px;
@@ -84,14 +77,12 @@
   .instructors-carts{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
+    margin-inline: 20svw;
   }
-  .instructor-cart{
-    width: 80svw;
-    height: 100svh;
-  }
-  .instructor-image{
-    width: 79.5svw;
-    height: 75.5svh;
+  .instructor-social{
+    img{
+      width: 60px;
+    }
   }
 }
 
@@ -101,14 +92,6 @@
   }
   .expert-ins{
     font-size: 65px !important;
-  }
-  .instructor-cart{
-    width: 200svw;
-    height: 190svh;
-  }
-  .instructor-image{
-    width: 200svw;
-    height: 150svh;
   }
   .instructor-social img{
     width: 18svw;

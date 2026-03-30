@@ -1,6 +1,10 @@
 @media screen and (max-width: 778px) {
-    .client-img-container img{
-        width: 80px;
+    .client-img-container{
+        width: 15svw;
+        img{
+            width: 100% !important;
+            height: 100% !important;
+        }
     }
     .client-name{
         font-size: 25px;
@@ -13,9 +17,15 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .client-img-container{
+        width: 17svw;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    .client-img-container img{
-        width: 160px !important;
+    .client-img-container{
+        width: 40svw;
     }
     .client-name{
         font-size: 45px !important;

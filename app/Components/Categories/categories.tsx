@@ -4,7 +4,7 @@ import CategoriesImages from "./categoriesImages/categoriesImages"
 export default function categories() {
   return (
     <>
-      <div className="categories-container font-heebo">
+      <section className="categories-container font-heebo mt-8 ">
         <div className="categories-title flex justify-center text-[#06BBCC]">
           <div className="design-line flex flex-col -my-2">
             <span className="h-2 mx-6.5">_____</span>
@@ -19,8 +19,8 @@ export default function categories() {
           </div>
         </div>
         <p className="categories-type flex item-center justify-center text-[40px] font-semibold my-3">Courses Categories</p>
-      </div>
       <CategoriesImages />
+      </section>
     </>
   );
 }

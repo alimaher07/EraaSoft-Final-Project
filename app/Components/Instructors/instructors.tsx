@@ -35,7 +35,7 @@ export default function instructors() {
 
   return (
     <>
-      <div className="instructors-container font-heebo">
+      <div className="instructors-container font-heebo mt-10">
         <div className="instructors-title flex justify-center text-[#06BBCC]">
           <div className="design-line flex flex-col -my-2">
             <span className="h-2 mx-6.5">_____</span>
@@ -50,13 +50,13 @@ export default function instructors() {
           </div>
         </div>
         <p className="expert-ins flex item-center justify-center text-[41px] font-semibold mt-2">Expert Instructors</p>
-        <div className="instructors-carts my-10 mx-30 grid grid-cols-4">
+        <div className="instructors-carts my-10 mx-30 grid grid-cols-4 gap-5">
             {instructors.map(instructor => (
                 <>
-                <div className="instructor-cart bg-[#06bbcc15] w-fit flex flex-col items-center justify-center">
-                <div className="instructor-img flex items-center justify-center flex-col">
-                    <div className="instructor-image overflow-hidden">
-                        <Image src={instructor.image} alt="" width={250} className=" transition ease-in-out duration-600 hover:scale-110"></Image>
+                <div className="instructor-cart bg-[#06bbcc15] w-full flex flex-col items-center justify-center">
+                <div className="instructor-img w-full flex items-center justify-center flex-col">
+                    <div className="instructor-image w-full overflow-hidden">
+                        <Image src={instructor.image} alt="" width={250} className=" transition w-full ease-in-out duration-600 hover:scale-110"></Image>
                     </div>
                     <div className="instructor-social flex items-center justify-center gap-2 w-fit p-2 relative -top-7 bg-[#F0FBFC]">
                         <Image src={FacebookIco} alt="" width={30}></Image>

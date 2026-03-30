@@ -1,5 +1,6 @@
 @font-face {
     font-family: Heebo;
+    font-weight: 500;
     src: url("../../../public/Fonts/Heebo-Regular.ttf");
   }
 
@@ -18,90 +19,230 @@
     }
   }
 
-  .nav-link:focus{
-    color: rgb(5, 150, 163);
-  }
+/* siedbar */
 
-  .nav-link:hover{
-    color: rgb(5, 150, 163);
-    transition: 0.3s;
-  }
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  margin-inline: 10px;
+  font-size: 15px;
+  height: 100%;
+  padding: 0 3px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: 0.3s;
+}
+nav a:hover{
+  color:#06BBCC;
+}
+.sidebar{
+  padding: 10px;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
 
-  .dropdown{
-    position: relative;
-  }
+.menu-btn{
+  display: none;
+}
 
+.dropdown, .nav-dropdown{
+  position: relative;
+  padding-block: 10px;
+}
+
+.dropDown-content{
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 8.2svh;
+}
+
+.dropDown-content a{
+  margin: 0;
+  padding: 10px;
+}
+
+.dropDown-content a:hover{
+  background-color: #f1f1f1;
+}
+
+.nav-dropdown:hover .dropDown-content, .dropdown:hover .dropDown-content{
+  display: flex;
+  flex-direction: column;
+  animation: dropdown linear;
+  animation-duration: 0.3s;
+}
+
+.nav-btn{
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.nav-btn:hover{
+  background-color: #06cadb;
+}
+
+
+
+@media screen and (max-width: 994px) {
+  nav{
+    padding-block: 2svh;
+    padding-inline: 4svw;
+  }
+  .menu-btn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    img{
+      width: 60px;
+    }
+  }
+  .sidebar{
+    top: 13%;
+  }
+  .hideOnMobile{
+    display: none;
+  }
+  .nav-dropdown{
+    display: none;
+  }
+  .dropdown a{
+    height: 6svh;
+  }
   .dropDown-content{
-    display: none;
-    position: absolute;
-    background-color: #FFFFFF;
-    min-width: 130px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 7.5svh;
+    top: 80%;
+    width: 101%;
   }
+}
 
+@media screen and (max-width: 778px) {
+  nav{
+    padding-inline: 6svw;
+    height: 16svh;
+  }
+  .sidebar{
+    top: 11%;
+    padding: 25px;
+    a{
+      font-size: 23px;
+    }
+  }
   .dropDown-content a{
-    margin: 0;
-    padding: 10px;
+    height: 9svh;
+    padding: 20px;
   }
-
-  .dropDown-content a:hover{
-    background-color: #f1f1f1;
-  }
-
-  .dropdown:hover .dropDown-content{
-    display: flex;
-    flex-direction: column;
-    animation: dropdown linear;
-    animation-duration: 0.3s;
-  }
-
-  .nav-btn{
-    transition: ease-in-out 0.3s;
-  }
-  
-  .nav-btn:hover{
-    background-color: #06cadb;
-  }
-
-  .list-icon{
-    display: none;
-  }
-
-  @media screen and (max-width: 991px) {
-    nav{
-      width: 101svw;
-    }
-    .links-container{
-      display: none;
-    }
-    .list-icon{
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 778px) {
-    nav{
-      width: 100%;
-      height: 16svh;
-    }
-    .list-icon{
-      width: 9svw;
-    }
-  }
+}
 
 @media screen and (max-width: 425px) {
   nav{
-    height: 35svh;
+    padding-inline: 14svw;
+    height: 32svh;
   }
-  .nav-logo img{
-    height: 20svh;
-    width: 20svw;
+  .nav-logo{
+    img{
+      width: 30%;
+      height: 12svh;
+    }
+    h2{
+      font-size: 74px;
+    }
   }
-  .nav-logo h2{
-    font-size: 90px;
+  .menu-btn{
+    width: 25svw;
+    height: 25svh;
+    button{
+      width: 100%;
+      height: 100%;
+      img{
+      width: 100%;
+      height: 100%;
+      }
+    }
   }
-  .list-icon{
-    width: 24svw;
+  .sidebar{
+    top: 10%;
+    padding: 40px;
+    li{
+      height: 20svh;
+      padding-block: 20px;
+      a{
+        font-size: 40px;
+      }
+    }
+  }
+  .dropDown-content{
+    top: 100%;
+    a{
+      padding: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav{
+    padding-inline: 18svw;
+    height: 30svh;
+  }
+  .nav-logo{
+    img{
+      width: 50%;
+      height: 16svh;
+    }
+    h2{
+      font-size: 80px;
+    }
+  }
+  .menu-btn{
+    width: 30svw;
+    height: 30svh;
+    button{
+      width: 100%;
+      height: 100%;
+      img{
+      width: 100%;
+      height: 100%;
+      }
+    }
+  }
+  .sidebar{
+    top: 11%;
+    padding: 40px;
+    li{
+      height: 20svh;
+      padding-block: 20px;
+      a{
+        font-size: 50px;
+      }
+    }
   }
 }

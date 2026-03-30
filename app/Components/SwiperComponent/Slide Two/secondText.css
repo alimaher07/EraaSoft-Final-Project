@@ -9,10 +9,11 @@
 
 .second-slider{
     background-image: url("../../../../public/CarouselOne.jpg");
+    background-size: cover;
     box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
     -webkit-box-shadow: -2px -1px 1999px 300px rgba(24,29,56,0.75) inset;
     -moz-box-shadow: -2px -1px 400px 200px rgba(24,29,56,0.75) inset;
-    width: 98.9svw;
+    width: 100%;
     height: 100svh;
     padding-inline: 10svw;
 }
@@ -32,63 +33,33 @@
     animation-range: entry 100%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .second-slider{
         width: 100%;
     }
 }
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 997px) {
     .main-text{
-        width: 90svw;
+        width: 90% !important;
     }
-    .first-slider{
-        width: 100%;
-        gap: 18px;
-    }
-    .slide-title{
-        font-size: 30px;
-    }
-    .big-text{
-        font-size: 60px;
-    }
-    .slide-description{
-        font-size: 20px;
-    }
-    .right-move-btn, .left-move-btn{
-        width: 21svw;
-        height: 14svh;
+}
+
+@media screen and (max-width: 768px) {
+    .second-slider{
+        height: 108svh;
     }
 }
 
 @media screen and (max-width: 425px) {
     .second-slider{
-        height: 137svh;
-    }
-    .main-text{
-        width: 100% !important;
-    }
-    .slide-title{
-        font-size: 50px !important;
-    }
-    .big-text{
-        font-size: 85px !important;
-    }
-    .slide-description{
-        font-size: 37px !important;
-        line-height: 8svh;
-    }
-    .main-btns button{
-        font-size: 30px;
-        width: 50svw !important;
-        height: 20svh !important;
+        height: 200svh;
+        background-repeat: no-repeat;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .main-btns button{
-        font-size: 30px;
-        width: 70svw !important;
-        height: 20svh !important;
+    .second-slider{
+        height: 240svh;
     }
 }

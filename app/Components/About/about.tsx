@@ -7,10 +7,10 @@ export default function about() {
   return (
     <>
     <div className="about-container font-heebo flex flex-row gap-[50px] py-3 px-30">
-        <div className="about-image">
-            <Image src={aboutImage} alt='' className='w-[100svw] h-[70svh]'></Image>
+        <div className="about-image w-full">
+            <Image src={aboutImage} alt='' className='w-full h-full'></Image>
         </div>
-        <div className="about-description-title m-auto flex flex-col gap-4">
+        <div className="about-description-title w-full m-auto flex flex-col gap-4">
             <div className="about-title flex">
                 <h2 className='container-title text-[#06BBCC] font-bold text-[18px]'>ABOUT US</h2>
                 <div className="design-line flex flex-col gap-0 -my-2.5 mx-4">

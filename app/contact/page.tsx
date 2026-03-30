@@ -32,7 +32,7 @@ export default function contact() {
       <div className="contact-grid grid grid-cols-3 px-25 gap-3 mt-10">
         <div className="contact-desc">
           <h1 className="font-medium text-[20px] mb-2">Get In Touch</h1>
-          <p className="text-[#52565b] mb-5">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" className="text-[#06BBCC]">Download Now</a></p>
+          <p className="descrecption-text text-[#52565b] mb-5">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" className="text-[#06BBCC]">Download Now</a></p>
           <div className="location flex gap-2 items-center justify-start mb-4">
             <Image src={LocationIco} alt="" width={50} height={40} className="bg-[#06BBCC] p-2"></Image>
             <div className="location-info">
@@ -40,9 +40,9 @@ export default function contact() {
               <p className="text-[#52565b]">El-Khoulafa Street, Alexandria, Egypt</p>
             </div>
           </div>
-          <div className="number flex gap-2 items-center justify-start mb-4">
+          <div className="mobile flex gap-2 items-center justify-start mb-4">
             <Image src={TelephoneIco} alt="" width={50} height={40} className="bg-[#06BBCC] p-2"></Image>
-            <div className="location-info">
+            <div className="moblie-info">
               <h2 className="text-[#06BBCC] font-medium">Mobile</h2>
               <p className="text-[#52565b]">+20 127 8525 409</p>
             </div>
@@ -56,7 +56,7 @@ export default function contact() {
           </div>
         </div>
         <div className="map flex items-center justify-center">
-          <Image src={map} alt="" width={600}></Image>
+          <Image src={map} alt="" className="w-full h-full"></Image>
         </div>
         <div className="form-container flex flex-col gap-3">
           <div className="name-inputs flex gap-2">
