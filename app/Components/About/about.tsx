@@ -47,7 +47,7 @@ export default function about() {
                     <span>International Certificate</span>
                 </div>
             </div>
-            <button className="about-btn bg-[#06BBCC] w-[15svw] my-6 py-4 px-8 text-[#FFFFFF] cursor-pointer">Read More</button>
+            <button className="about-btn bg-[#06BBCC] w-[15svw] my-6 py-4 px-8 text-[#FFFFFF] cursor-pointer"><a href="/about">Read More</a></button>
         </div>
     </div>
     </>
