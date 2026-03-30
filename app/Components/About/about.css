@@ -131,9 +131,11 @@
     font-size: 40px !important;
   }
   .about-btn{
-    font-size: 40px;
     width: 50%;
     height: 33svw;
+    a{
+      font-size: 40px !important;
+    }
   }
 }
 
