@@ -17,7 +17,7 @@ export default function SwiperComponent() {
     navigation = {true}
     pagination = {{ clickable : true }}
     scrollbar = {{ draggable : true }}
-    className = 'w-full'
+    className = 'w-full h-[90svh]'
     loop = {true}
     modules = {[ Pagination , Navigation ]}
     >

@@ -53,13 +53,14 @@
 
 @media screen and (max-width: 425px) {
     .second-slider{
-        height: 200svh;
+        height: 100svh;
         background-repeat: no-repeat;
+        padding: 16px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .second-slider{
-        height: 240svh;
+        height: 100svh;
     }
 }

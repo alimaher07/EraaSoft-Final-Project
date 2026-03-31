@@ -8,7 +8,7 @@
   }
 }
 
-.flex-image, .flex-long-image{
+.flex-image, .flex-long-image, .position-image{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1024px) {
   .flex-long-image{
-    height: 78svh;
+    height: 50svh;
   }
 }
 
@@ -43,6 +43,7 @@
 
 @media screen and (max-width: 778px) {
   .images-container{
+    width: 100%;
     padding-inline: 25px;
   }
   .long-image{
@@ -58,6 +59,7 @@
   }
   .flex-long-image{
     height: 130svh;
+    width: 60svw;
   }
 }
 
@@ -91,15 +93,15 @@
   }
   .flex-image{
     width: 100%;
-    .image{
-      height: 60svh;
+    image{
+      height: 30svh;
     }
   }
   .image{
     width: 100%;
   }
   .position-image .image{
-    height: 95svh;
+    height: 54svh;
   }
   .grid-image{
     gap: 30px;
@@ -109,7 +111,7 @@
   }
   .flex-long-image{
     width: 100%;
-    height: 160svh;
+    height: 70svh;
     .long-image{
       width: 100%;
       height: 100%;

@@ -49,7 +49,7 @@
     width: fit-content;
   }
   .courses-cart{
-    width: 60svw;
+    width: 45svw;
     .image-and-btn-course{
       width: 100%;
       .course-image{
@@ -90,7 +90,7 @@
     }
     .btns{
       left: 30%;
-      font-size: 20px;
+      font-size: 18px;
     }
   }
   .course-rating{
@@ -118,39 +118,45 @@
 }
 
 @media screen and (max-width: 425px) {
+  .courses-carts{
+    width: 92%;
+  }
   .courses-cart{
-    width: 209svw;
+    width: 100%;
     .btns{
-      left: 25% !important;
-      padding-block: 8px;
-      width: 45%;
+      left: 25%;
+      width: 55%;
+      button{
+        padding-inline: 10px;
+      }
       a{
-        font-size: 30px !important;
+        padding: 0;
+        font-size: 12px !important;
       }
     }
     .course-price{
-      font-size: 60px;
+      font-size: 30px;
     }
     .course-rating{
       img{
-        width: 35px;
+        width: 20px;
       }
       small{
-        font-size: 30px;
+        font-size: 15px;
       }
     }
     .course-description p{
-      font-size: 50px;
+      font-size: 25px;
     }
     .teacher-name, .time, .students-number {
-      font-size: 40px;
+      font-size: 15px;
       img{
-        width: 40px;
+        width: 20px;
       }
     }
     .students-number{
       img{
-        width: 50px;
+        width: 20px;
       }
     }
   }
@@ -158,18 +164,32 @@
 
 @media screen and (max-width: 375px) {
   .courses-carts{
-    margin-inline: 0;
-    width: 100%;
+    margin-inline: auto;
+    width: 91%;
   }
   .courses-cart{
-    width: 240svw;
+    width: 100%;
+  }
+  .course-description p{
+    font-size: 22px !important;
   }
   .btns{
-    width: 50% !important;
-    left: 24% !important;
-    font-size: 38px !important;
+    width: 65% !important;
+    left: 19% !important;
+    a{
+      font-size: 10px !important;
+    }
+  }
+  .course-rating{
+    img{
+      width: 18px !important;
+    }
+    small{
+      font-size: 13px !important;
+    }
   }
   .teacher-name, .time, .students-number{
-    font-size: 30px !important;
+    font-size: 10px !important;
+    
   }
 }

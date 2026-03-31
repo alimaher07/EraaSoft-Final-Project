@@ -32,7 +32,7 @@ export default function contact() {
       <div className="contact-grid grid grid-cols-3 px-25 gap-3 mt-10">
         <div className="contact-desc">
           <h1 className="font-medium text-[20px] mb-2">Get In Touch</h1>
-          <p className="descrecption-text text-[#52565b] mb-5">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" className="text-[#06BBCC]">Download Now</a></p>
+          <p className="descreption-text text-[#52565b] mb-5">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" className="text-[#06BBCC]">Download Now</a></p>
           <div className="location flex gap-2 items-center justify-start mb-4">
             <Image src={LocationIco} alt="" width={50} height={40} className="bg-[#06BBCC] p-2"></Image>
             <div className="location-info">

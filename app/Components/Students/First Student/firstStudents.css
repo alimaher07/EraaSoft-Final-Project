@@ -25,16 +25,22 @@
 
 @media screen and (max-width: 425px) {
     .client-img-container{
-        width: 40svw;
+        width: 25svw;
     }
     .client-name{
-        font-size: 45px !important;
+        font-size: 25px !important;
     }
     .client-proffession{
-        font-size: 35px !important;
+        font-size: 15px !important;
     }
     .client-comment{
-        width: 170svw;
-        font-size: 30px !important;
+        width: 80%;
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .client-img-container, .client-details, .client-comment{
+        margin-right: 20%;
     }
 }

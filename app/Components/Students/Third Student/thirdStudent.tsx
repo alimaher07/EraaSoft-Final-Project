@@ -9,7 +9,7 @@ export default function thirdStudent() {
                 <Image src={ClientImageThree} alt="" className="rounded-full full p-2"></Image>
             </div>
             <div className="client-details my-4">
-                <h2 className=" client-name font-medium text-[20px]">Client Name</h2>
+                <h2 className=" client-name font-medium text-[20px]">Jourge Mikel</h2>
                 <p className=" clien-proffession text-[#52565b] text-[18px] font-medium">Profession</p>
             </div>
             <div className="client-comment bg-[#06BBCC] text-white p-5">

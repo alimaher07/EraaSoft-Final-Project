@@ -12,7 +12,6 @@ import Footer from "./Components/Footer/footer"
 export default function Home() {
   return (
     <>
-    <div className="font-heebo">
     <SwiperComponent />
     <HomeCarts />
     <About />
@@ -21,7 +20,6 @@ export default function Home() {
     <Instructors />
     <Students />
     <Footer />
-    </div>
     </>
   );
 }

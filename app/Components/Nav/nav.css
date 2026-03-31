@@ -75,7 +75,6 @@ nav a:hover{
 
 .dropdown, .nav-dropdown{
   position: relative;
-  padding-block: 10px;
 }
 
 .dropDown-content{
@@ -84,7 +83,7 @@ nav a:hover{
   background-color: #FFFFFF;
   min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  top: 8.2svh;
+  top: 6.5svh;
 }
 
 .dropDown-content a{
@@ -112,7 +111,11 @@ nav a:hover{
   background-color: #06cadb;
 }
 
-
+@media screen and (max-width: 1024px) {
+  .dropDown-content{
+    top: 193%;
+  }
+}
 
 @media screen and (max-width: 994px) {
   nav{
@@ -137,7 +140,7 @@ nav a:hover{
     display: none;
   }
   .dropdown a{
-    height: 6svh;
+    height: 8svh;
   }
   .dropDown-content{
     top: 80%;
@@ -163,23 +166,29 @@ nav a:hover{
   }
 }
 
+@media screen and (max-width: 614px) {
+  .sidebar{
+    top: 16%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   nav{
-    padding-inline: 14svw;
-    height: 32svh;
+    padding-inline: 9svw;
+    height: 15svh;
   }
   .nav-logo{
     img{
-      width: 30%;
+      width: 20%;
       height: 12svh;
     }
     h2{
-      font-size: 74px;
+      font-size: 30px;
     }
   }
   .menu-btn{
-    width: 25svw;
-    height: 25svh;
+    width: 10svw;
+    height: 10svh;
     button{
       width: 100%;
       height: 100%;
@@ -190,13 +199,13 @@ nav a:hover{
     }
   }
   .sidebar{
-    top: 10%;
-    padding: 40px;
+    top: 15%;
+    padding: 10px;
     li{
-      height: 20svh;
-      padding-block: 20px;
+      height: 10svh;
+      padding-block: 12px;
       a{
-        font-size: 40px;
+        font-size: 20px;
       }
     }
   }
@@ -210,21 +219,21 @@ nav a:hover{
 
 @media screen and (max-width: 375px) {
   nav{
-    padding-inline: 18svw;
-    height: 30svh;
+    padding-inline: 9svw;
+    height: 15svh;
   }
   .nav-logo{
     img{
-      width: 50%;
-      height: 16svh;
+      width: 20%;
+      height: 12svh;
     }
     h2{
-      font-size: 80px;
+      font-size: 30px;
     }
   }
   .menu-btn{
-    width: 30svw;
-    height: 30svh;
+    width: 10svw;
+    height: 10svh;
     button{
       width: 100%;
       height: 100%;
@@ -235,14 +244,20 @@ nav a:hover{
     }
   }
   .sidebar{
-    top: 11%;
-    padding: 40px;
+    top: 15%;
+    padding: 10px;
     li{
-      height: 20svh;
-      padding-block: 20px;
+      height: 10svh;
+      padding-block: 12px;
       a{
-        font-size: 50px;
+        font-size: 20px;
       }
+    }
+  }
+  .dropDown-content{
+    top: 100%;
+    a{
+      padding: 40px;
     }
   }
 }

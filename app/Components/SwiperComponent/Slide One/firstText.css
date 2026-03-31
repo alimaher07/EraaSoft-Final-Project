@@ -47,78 +47,87 @@
 
 @media screen and (max-width: 768px) {
     .first-slider{
-        height: 108svh;
+        height: 100svh;
     }
     .slide-title{
-        font-size: 30px;
+        font-size: 25px;
     }
     .big-text{
-        font-size: 62px;
+        font-size: 40px;
     }
     .slide-description{
-        font-size: 26px;
+        font-size: 20px;
     }
     .main-btns{
-        width: 50%;
-        height: 20%;
+        width: 70%;
+        height: 15%;
     }
     .main-btns button{
         width: 100%;
         height: 60%;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 614px) {
+    .slide-title{
+        font-size: 25px;
+    }
+    .big-text{
+        font-size: 35px;
+    }
+    .slide-description{
+        font-size: 21px;
+    }
     .main-btns{
-        width: 60%;
+        width: 80%;
+        button{
+            font-size: 17px;
+        }
     }
 }
 
-@media screen and (max-width: 501px) {
-    .main-btns{
-        width: 70%;
-    }
-}
 
 @media screen and (max-width: 425px) {
     .first-slider{
-        height: 200svh;
+        height: 100svh;
         background-repeat: no-repeat;
+        padding: 16px;
     }
     .slide-title{
-        font-size: 50px;
+        font-size: 20px;
     }
     .big-text{
-        font-size:90px;
+        font-size:30px;
     }
     .slide-description{
-        font-size: 50px;
-        line-height: 70px;
+        font-size: 25px;
     }
     .main-btns{
-        width: 70%;
+        width: 90%;
         button{
-            font-size: 35px;
+            font-size: 15px;
         }
     }
 }
 
 @media screen and (max-width: 375px) {
     .first-slider{
-        height: 240svh;
+        height: 100svh;
     }
     .slide-title{
-        font-size: 60px;
+        font-size: 20px;
     }
     .big-text{
-        font-size: 95px;
+        font-size: 30px;
     }
     .slide-description{
-        font-size: 55px;
-        line-height: 75px;
+        font-size: 20px;
     }
     .main-btns{
         height: 20%;
+        button{
+            font-size: 12px;
+        }
     }
 }
